@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <com.example.android.annotationtest.PaintView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/welcome"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/red_bn"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/oneRed"
+         />
+
+    <Button
+        android:id="@+id/blue_bn"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_toRightOf="@+id/red_bn"
+
+        android:background="#304FFE"
+        />
+
+    <Button
+        android:id="@+id/green_bn"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_toRightOf="@+id/blue_bn"
+        android:layout_marginTop="0dp"
+        android:background="#00E676"
+
+         />
+
+    <Switch
+        android:id="@+id/erase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/red_bn"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/green_bn"
+        android:text="ERASE"
+        android:textOff="isEraserOff"
+        android:textOn="isEraserOn" />
+
+
+    <TextView
+        android:id="@+id/dotSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/add_bn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/dotSize"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/sub_bn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/dotSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-72dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/photoView"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/add_bn"
+        android:text="CAMERA" />
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+
+        android:text="RESET" />
+
+
+
+
+</RelativeLayout>
